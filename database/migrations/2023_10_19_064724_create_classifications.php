@@ -17,10 +17,11 @@ return new class extends Migration
             $table->string("nama");
             $table->char("jenis_kelamin");
             $table->string("kecamatan");
-            $table->string("tpt01");
-            $table->string("tpt02");
-            $table->string("tpt03");
-            $table->string("tpt04");
+            $table->char("tpt01",1 );
+            $table->char("tpt02",1 );
+            $table->char("tpt03",1 );
+            $table->char("tpt04",1 );
+            $table->char("status",1 );
             $table->timestamps();
         });
     }
